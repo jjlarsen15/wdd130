@@ -5,11 +5,17 @@ body {
     padding: 0;
     background-color: #fcfbfb;
     color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure full viewport height */
+    text-align: center; /* Make sure text is centered */
 }
 
 /* Page Container */
 #content {
     max-width: 1600px;
+    width: 100%; /* Ensure content takes full width */
     margin: 0 auto;
 }
 
@@ -19,6 +25,7 @@ header {
     padding: 20px;
     background-color: rgba(20,30,13, .7);
     color: white;
+    width: 100%; /* Ensure header takes full width */
 }
 
 /* Navigation */
@@ -31,6 +38,7 @@ nav a {
     text-decoration: none;
     color: #fcfbfb;
     text-align: center;
+    margin: 0 10px; /* Add spacing between links */
 }
 
 nav a:hover {
@@ -43,6 +51,7 @@ nav a:hover {
 #hero {
     text-align: center;
     position: relative;
+    width: 100%; /* Ensure it takes full width */
 }
 
 #hero-img {
@@ -68,28 +77,34 @@ main {
     gap: 20px;
     padding: 20px;
     text-align: center;
+    width: 100%; /* Ensure full width */
+}
+
+.home-grid {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center them horizontally */
+    gap: 20px; /* Add spacing between sections */
+    width: 100%; /* Ensure full width */
 }
 
 main section {
     width: 100%;
-    max-width: 400px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    max-width: 400px; /* Limit max width for better readability */
+    margin: 0 auto; /* Center each section */
 }
 
 /* Background Div */
 #background {
     height: 725px;
     background-color: #ddd;
+    width: 100%; /* Ensure full width */
 }
 
 /* Message Section */
 .msg {
     background-color: #f4f4f4;
     padding: 20px;
-    text-align: center;
 }
 
 .msg h2 {
@@ -119,6 +134,7 @@ footer {
     padding: 20px;
     background-color: #f8f8f8;
     font-size: 1.2em;
+    width: 100%; /* Ensure footer takes full width */
 }
 
 footer a {
@@ -138,12 +154,12 @@ footer a:hover {
     width: 80px;
 }
 
-/* Ensure Rivers, Camping, and Rapids sections appear one at a time */
-.river-cards, .rapids-card, .camping-card {
-    width: 100%;
-    max-width: 600px;
+/* Flexbox Centering for Content */
+.card-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: center;
+    width: 100%;
 }
+
