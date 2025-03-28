@@ -3,6 +3,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #fcfbfb;
+    color: #333;
 }
 
 /* Page Container */
@@ -15,6 +17,8 @@ body {
 header {
     text-align: center;
     padding: 20px;
+    background-color: rgba(20,30,13, .7);
+    color: white;
 }
 
 /* Navigation */
@@ -25,11 +29,14 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #333;
-    margin: 0 15px;
-    font-size: 18px;
-    font-weight: bold;
+    color: #fcfbfb;
     text-align: center;
+}
+
+nav a:hover {
+    background-color: black;
+    color: #d9c2a3;
+    text-decoration: underline;
 }
 
 /* Hero Section */
@@ -45,6 +52,7 @@ nav a {
 
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
+    color: white;
 }
 
 .button-box {
@@ -69,9 +77,60 @@ main section {
     text-align: center;
 }
 
+/* Background Div */
+#background {
+    height: 725px;
+    background-color: #ddd;
+}
+
+/* Message Section */
+.msg {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.msg h2 {
+    color: #333;
+}
+
+.msg p {
+    color: #666;
+}
+
+.book, .join {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.book:hover, .join:hover {
+    background-color: black;
+    color: #d9c2a3;
+}
+
 /* Footer */
 footer {
     text-align: center;
     padding: 20px;
     background-color: #f8f8f8;
+    font-size: 1.2em;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Logo and Icon Sizing */
+.logo {
+    width: 80px;
+}
+
+.icon {
+    width: 80px;
 }
