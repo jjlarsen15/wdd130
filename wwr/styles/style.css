@@ -1,3 +1,4 @@
+
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
@@ -5,12 +6,15 @@ body {
     padding: 0;
     background-color: #fcfbfb;
     color: #333;
+    width: 100%; /* Ensures the body takes up the full width */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Page Container */
 #content {
     max-width: 1600px;
     margin: 0 auto;
+    width: 100%; /* Ensure the content area takes up full width */
 }
 
 /* Header */
@@ -19,6 +23,7 @@ header {
     padding: 20px;
     background-color: rgba(20,30,13, .7);
     color: white;
+    width: 100%; /* Ensure header takes up full width */
 }
 
 /* Navigation */
@@ -43,6 +48,7 @@ nav a:hover {
 #hero {
     text-align: center;
     position: relative;
+    width: 100%; /* Ensure hero section takes full width */
 }
 
 #hero-img {
@@ -53,6 +59,7 @@ nav a:hover {
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
     color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
 }
 
 .button-box {
@@ -68,8 +75,10 @@ main {
     gap: 20px;
     padding: 20px;
     text-align: center;
+    width: 100%; /* Ensure main takes full width */
 }
 
+/* Home Grid */
 .home-grid {
     display: flex;
     flex-direction: column;
@@ -80,7 +89,7 @@ main {
 
 main section {
     width: 100%;
-    max-width: 400px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -123,6 +132,7 @@ footer {
     padding: 20px;
     background-color: #f8f8f8;
     font-size: 1.2em;
+    width: 100%; /* Ensure footer takes full width */
 }
 
 footer a {
@@ -148,7 +158,6 @@ footer a:hover {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 600px; /* Consistent width for all cards */
+    max-width: 600px;
     margin: 0 auto;
 }
-
