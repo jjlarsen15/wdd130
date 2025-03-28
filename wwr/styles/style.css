@@ -144,20 +144,13 @@ footer a:hover {
 }
 
 /* River, Camping, Rapids Sections - Centering Fix */
-.river-cards, .rapids-card {
+.river-cards, .camping-card .rapids-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
-}
-
-.camping-card img {
-    width: 100%;  /* Ensure the image fills the parent container */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove any space below the image */
-    margin: 0 auto; /* Center the image inside the container */
 }
 
 .camping-card h2 {
