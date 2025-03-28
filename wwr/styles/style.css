@@ -47,7 +47,9 @@ nav a:hover {
 /* Hero Section */
 #hero {
     text-align: center;
-    width: 100%; /* Ensure hero section takes full width */
+    position: relative;
+    width: 100%; /* Ensure the hero section takes full width */
+    margin: 0 auto; /* Centers the hero section */
 }
 
 #hero-img {
@@ -65,6 +67,7 @@ nav a:hover {
     text-align: center;
     margin-top: 20px;
 }
+
 
 /* Main Sections */
 main {
