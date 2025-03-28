@@ -149,7 +149,12 @@ footer a:hover {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 600px;
+    max-width: 600px; /* Consistent width for all cards */
     margin: 0 auto;
 }
 
+/* Optional: Ensure all images inside the cards are the same width */
+.river-cards img, .camping-card img, .rapids-card img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+}
