@@ -47,7 +47,6 @@ nav a:hover {
 /* Hero Section */
 #hero {
     text-align: center;
-    position: relative;
     width: 100%; /* Ensure hero section takes full width */
 }
 
