@@ -144,7 +144,7 @@ footer a:hover {
 }
 
 /* River, Camping, Rapids Sections - Centering Fix */
-.river-cards, .camping-card .rapids-card {
+.river-cards, .camping-card, .rapids-card {
     display: flex;
     flex-direction: column;
     align-items: center;
