@@ -153,8 +153,3 @@ footer a:hover {
     margin: 0 auto;
 }
 
-/* Optional: Ensure all images inside the cards are the same width */
-.river-cards img, .camping-card img, .rapids-card img {
-    width: 100%; /* Make images responsive */
-    height: auto; /* Maintain aspect ratio */
-}
