@@ -52,7 +52,7 @@ nav a:hover {
 
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
-    color: blue;
+    color: rgb(112, 112, 240);
     text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
 }
 
