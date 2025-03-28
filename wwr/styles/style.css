@@ -10,7 +10,7 @@ body {
 /* Page Container */
 #content {
     max-width: 1600px;
-    margin: 0 auto; /* This ensures the content is centered horizontally */
+    margin: 0 auto;
 }
 
 /* Header */
@@ -53,7 +53,7 @@ nav a:hover {
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
     color: white;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.6); /* Adding a shadow to improve text contrast */
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
 }
 
 .button-box {
@@ -73,17 +73,16 @@ main {
 
 .home-grid {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center them horizontally */
-    gap: 20px; /* Add spacing between sections */
-    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
     width: 100%;
 }
 
 main section {
     width: 100%;
-    max-width: 400px; /* Limit max width for better readability */
-    margin: 0 auto; /* Center each section */
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 /* Background Div */
@@ -148,8 +147,12 @@ footer a:hover {
 .river-cards, .camping-card, .rapids-card {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center content inside the section */
+    align-items: center;
     width: 100%;
     max-width: 400px;
-    margin: 0 auto; /* Center each card */
+    margin: 0 auto;
+}
+
+.camping-card h2 {
+    color: #4CAF50; /* Changed color to a more visible shade of green */
 }
