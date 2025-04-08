@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Star Wars Page</title>
+
+  <!-- Star Wars-like Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background-color: black;
+      color: orange;
+    }
+
+    nav {
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+      border-bottom: 2px solid orange;
+    }
+
+    nav a {
+      color: orange;
+      text-decoration: none;
+      margin: 0 1.5rem;
+      font-size: 1.2rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+  position: relative;
+  background: url('images/banner.jpg') center/cover no-repeat;
+  background-position: center -150px; /* Moves the background down */
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Transparent overlay on the image */
+  z-index: 1;
+}
+
+.hero h1 {
+  position: relative;
+  z-index: 2; /* Ensure the text is above the overlay */
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  color: orange; /* Bright orange text */
+  font-weight: bold; /* Bold text */
+}
+
+    .movies {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .movie {
+      text-align: center;
+    }
+
+    .movie a {
+      color: orange;
+      text-decoration: none;
+    }
+
+    .movie img {
+      width: 150px;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+      margin-bottom: 0.5rem;
+      border: 2px solid orange;
+    }
+
+    .about-section {
+      background-color: #222;
+      padding: 2rem;
+      text-align: center;
+      font-size: 1rem;
+      margin-top: 2rem;
+    }
+
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 1rem;
+      border-top: 2px solid orange;
+    }
+
+    footer a {
+      color: orange;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menace.html">The Phantom Menace</a>
+    <a href="clones.html">Attack of the Clones</a>
+  </nav>
+
+  <div class="hero">
+    <h1>Welcome to the Star Wars Universe</h1>
+  </div>
+
+  <section class="movies">
+    <div class="movie">
+      <a href="menace.html">
+        <img src="images/phantommenace.jpg" alt="The Phantom Menace" />
+        <p>The Phantom Menace</p>
+      </a>
+    </div>
+    <div class="movie">
+      <a href="clones.html">
+        <img src="images/clonewars.webp" alt="Attack of the Clones" />
+        <p>Attack of the Clones</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="about-section">
+<p><strong></strong><br>This website will be a fan-made resource hub dedicated to the Star Wars universe. The focus of the site will be to provide organized, easy-to-read information about the characters, locations, and plots of each Star Wars movie. The primary audience includes both longtime fans looking to refresh their memory and newcomers to the franchise who want a quick and reliable way to get up to speed. This site will serve as a central guide for anyone curious about the movies, needing context for a character, or simply wanting to explore the galaxy far, far away.
+Another feature of the website will be short, spoiler-aware synopses of each film. The goal is to give readers a clear sense of what happens in each movie without overwhelming them with too much detail or ruining key plot points if they haven’t seen the movie yet. These synopses will include the main conflicts, setting, and character arcs while avoiding overly technical descriptions. This approach makes it helpful for both casual viewers and dedicated fans looking for a refresher.
+
+  </section>
+
+  <footer>
+    <p><a href="site-plan.html">View Site Plan</a></p>
+  </footer>
+
+</body>
+</html>

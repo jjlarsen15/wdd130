@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Phantom Menace</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background-color: black;
+      color: orange;
+    }
+
+    nav {
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+      border-bottom: 2px solid orange;
+    }
+
+    nav a {
+      color: orange;
+      text-decoration: none;
+      margin: 0 1.5rem;
+      font-size: 1.2rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      position: relative;
+      background: url('movie-poster-placeholder.jpg') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .hero h1 {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 1rem 2rem;
+      font-size: 2rem;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin: 2rem 0 1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 1rem;
+      padding: 0 2rem 2rem;
+      justify-items: center;
+    }
+
+    .grid img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border: 2px solid orange;
+    }
+
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 1rem;
+      border-top: 2px solid orange;
+    }
+
+    footer a {
+      color: orange;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menace.html">The Phantom Menace</a>
+    <a href="clones.html">Attack of the Clones</a>
+  </nav>
+
+  <div class="hero">
+    <h1>The Phantom Menace</h1>
+  </div>
+
+  <section class="section-title">Characters</section>
+  <section class="grid">
+    <img src="char1.jpg" alt="Character 1" />
+    <img src="char2.jpg" alt="Character 2" />
+    <img src="char3.jpg" alt="Character 3" />
+    <img src="char4.jpg" alt="Character 4" />
+    <img src="char5.jpg" alt="Character 5" />
+  </section>
+
+  <section class="section-title">Locations</section>
+  <section class="grid">
+    <img src="loc1.jpg" alt="Location 1" />
+    <img src="loc2.jpg" alt="Location 2" />
+    <img src="loc3.jpg" alt="Location 3" />
+  </section>
+
+  <footer>
+    <p><a href="site-plan.html">View Site Plan</a></p>
+  </footer>
+
+</body>
+</html>

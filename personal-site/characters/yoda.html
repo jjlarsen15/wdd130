@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Character Page</title>
+
+  <!-- Star Wars-like Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background-color: black;
+      color: orange;
+    }
+
+    nav {
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+      border-bottom: 2px solid orange;
+    }
+
+    nav a {
+      color: orange;
+      text-decoration: none;
+      margin: 0 1.5rem;
+      font-size: 1.2rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .character-section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 2rem;
+      gap: 2rem;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .character-image {
+      flex: 1 1 300px;
+      max-width: 400px;
+    }
+
+    .character-image img {
+      width: 100%;
+      border: 2px solid orange;
+    }
+
+    .character-info {
+      flex: 1 1 300px;
+      max-width: 500px;
+      font-size: 1rem;
+    }
+
+    .synopsis {
+      background-color: #222;
+      padding: 2rem;
+      margin: 2rem;
+      font-size: 1.1rem;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 1rem;
+      border-top: 2px solid orange;
+    }
+
+    footer a {
+      color: orange;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menace.html">The Phantom Menace</a>
+    <a href="clones.html">Attack of the Clones</a>
+  </nav>
+
+  <section class="character-section">
+    <div class="character-image">
+      <img src="images/yoda-movie.jpeg" alt="Character Image">
+    </div>
+    <div class="character-info">
+      <h2>Character Name</h2>
+      <p><strong>Species:</strong> Unknown</p>
+      <p><strong>Homeworld:</strong> Unknown</p>
+      <p><strong>Affiliation:</strong> Jedi Order</p>
+      <p><strong>Lightsaber Color:</strong> Green</p>
+      <!-- Add more info as needed -->
+    </div>
+  </section>
+
+  <section class="synopsis">
+    <h3>Character Synopsis</h3>
+    <p>
+    Yoda's a powerhouse in the Clone Wars - leading clone troopers, advising key Jedi, and taking on fierce foes like Asajj Ventress and Count Dooku. As Grand Master of the Jedi Order, he's deeply involved in the war effort, using his mastery of the Force to guide the Republic's strategy. His complex past and connection to the mystical side of the Force are also explored, adding depth to his character. Yoda's a central figure in the Clone Wars, showcasing his exceptional leadership, combat skills, and wisdom.
+    </p>
+  </section>
+
+  <footer>
+    <p><a href="site-plan.html">View Site Plan</a></p>
+  </footer>
+
+</body>
+</html>
