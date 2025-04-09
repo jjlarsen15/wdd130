@@ -35,21 +35,38 @@
     }
 
     .hero {
-      position: relative;
-      background: url('movie-poster-placeholder.jpg') center/cover no-repeat;
-      height: 300px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      margin-bottom: 2rem;
-    }
+  position: relative;
+  background: url('images/menace.jpg') center/cover no-repeat; /* Background image for the hero section */
+  background-position: center -150px; /* Optional: Adjusts the vertical position of the image */
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 2rem;
+}
 
-    .hero h1 {
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 1rem 2rem;
-      font-size: 2rem;
-    }
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+  z-index: 1;
+}
+
+.hero h1 {
+  position: relative;
+  z-index: 2; /* Ensure the text is above the overlay */
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  color: orange; /* Bright orange text */
+  font-weight: bold; /* Bold text */
+  background-color: transparent; /* Remove any background highlight */
+}
+
 
     .section-title {
       text-align: center;
@@ -87,6 +104,23 @@
       text-align: center;
       padding: 1rem;
       border-top: 2px solid orange;
+    }
+
+    .back-btn {
+      background-color: orange;
+      color: black;
+      padding: 1rem 2rem;
+      font-size: 1.5rem;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      margin-top: 2rem;
+      display: inline-block;
+      border-radius: 5px;
+    }
+
+    .back-btn:hover {
+      background-color: #ff9900;
     }
 
     footer a {
@@ -134,7 +168,7 @@
       <p>Darth Maul</p>
     </a>
     <a href="characters/padme.html">
-      <img src="characters/images/padme.jpeg" alt="Padme" />
+      <img src="characters/images/padme.jpeg" alt="Padmé Amidala" />
       <p>Padmé Amidala</p>
     </a>
   </section>
@@ -146,12 +180,12 @@
       <p>Naboo</p>
     </a>
     <a href="locations/tatooine.html">
-      <img src="locations/images/tatooine.jpeg" alt="tatooine" />
+      <img src="locations/images/tatooine.jpeg" alt="Tatooine" />
       <p>Tatooine</p>
     </a>
     <a href="locations/alderaan.html">
       <img src="locations/images/alderaan.jpeg" alt="Alderaan" />
-      <p>Aldneraan</p>
+      <p>Alderaan</p>
     </a>
   </section>
 
