@@ -57,6 +57,16 @@
       margin: 2rem 0 1rem;
     }
 
+    .synopsis {
+      background-color: #222;
+      padding: 2rem;
+      font-size: 1.2rem;
+      text-align: center;
+      margin: 1rem 2rem;
+      border-radius: 8px;
+      color: white;
+    }
+
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -97,21 +107,55 @@
     <h1>The Phantom Menace</h1>
   </div>
 
-  <section class="section-title">Characters</section>
-  <section class="grid">
-    <img src="char1.jpg" alt="Character 1" />
-    <img src="char2.jpg" alt="Character 2" />
-    <img src="char3.jpg" alt="Character 3" />
-    <img src="char4.jpg" alt="Character 4" />
-    <img src="char5.jpg" alt="Character 5" />
+  <!-- Added Synopsis Section -->
+  <section class="synopsis">
+    <h3>Movie Synopsis</h3>
+    <p>
+      *The Phantom Menace* introduces a young Anakin Skywalker and the rise of the Sith. Jedi Knights Qui-Gon Jinn and Obi-Wan Kenobi are sent to protect Queen Amidala of Naboo from the Trade Federation’s invasion. During their mission, they encounter the Sith Lord Darth Maul, who is hunting them. Meanwhile, Qui-Gon discovers Anakin's potential in the Force and believes he may be the Chosen One destined to bring balance to the Force. As the battle for Naboo intensifies, the future of the galaxy becomes uncertain.
+    </p>
   </section>
 
-  <section class="section-title">Locations</section>
+  <section class="section-title">Significant Characters</section>
   <section class="grid">
-    <img src="loc1.jpg" alt="Location 1" />
-    <img src="loc2.jpg" alt="Location 2" />
-    <img src="loc3.jpg" alt="Location 3" />
+    <a href="characters/qui.html">
+      <img src="characters/images/qui.jpeg" alt="Qui-Gon-Jinn" />
+      <p>Qui-Gon-Jinn</p>
+    </a>
+    <a href="characters/obi-wan.html">
+      <img src="characters/images/obi-wan icon.jpeg" alt="Obi-Wan Kenobi" />
+      <p>Obi-Wan Kenobi</p>
+    </a>
+    <a href="characters/anakin.html">
+      <img src="characters/images/anakin.jpeg" alt="Anakin Skywalker" />
+      <p>Anakin Skywalker</p>
+    </a>
+    <a href="characters/maul.html">
+      <img src="characters/images/maul.jpeg" alt="Darth Maul" />
+      <p>Darth Maul</p>
+    </a>
+    <a href="characters/padme.html">
+      <img src="characters/images/padme.jpeg" alt="Padme" />
+      <p>Padmé Amidala</p>
+    </a>
   </section>
+
+  <section class="section-title">Significant Locations</section>
+  <section class="grid">
+    <a href="locations/naboo.html">
+      <img src="locations/images/naboo.jpeg" alt="Naboo" />
+      <p>Naboo</p>
+    </a>
+    <a href="locations/tatooine.html">
+      <img src="locations/images/tatooine.jpeg" alt="tatooine" />
+      <p>Tatooine</p>
+    </a>
+    <a href="locations/alderaan.html">
+      <img src="locations/images/alderaan.jpeg" alt="Alderaan" />
+      <p>Aldneraan</p>
+    </a>
+  </section>
+
+  <a href="javascript:history.back()" class="back-btn">Back</a>
 
   <footer>
     <p><a href="site-plan.html">View Site Plan</a></p>
